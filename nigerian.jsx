@@ -258,15 +258,20 @@ const ELECTIONS = [
 ];
 
 const PRESIDENTS = [
-  { init: "NA", name: "Nnamdi Azikiwe", party: "NCNC", years: "1963–1966", type: "civilian", legacy: "Nigeria's first president. Intellectual, nationalist, Pan-Africanist. Known as 'Zik of Africa'. Removed by military coup." },
-  { init: "YG", name: "Yakubu Gowon", party: "Military", years: "1966–1975", type: "military", legacy: "Led Nigeria through the civil war. His 'No victor, no vanquished' post-war policy prevented further bloodshed. Overthrown while at an OAU summit." },
-  { init: "MM", name: "Murtala Muhammed", party: "Military", years: "1975–1976", type: "military", legacy: "Energetic reformer who planned moving the capital to Abuja. Known for anti-corruption purges. Assassinated in a failed coup 6 months into office." },
-  { init: "OO", name: "Olusegun Obasanjo", party: "Mil/PDP", years: "1976–79, 1999–2007", type: "both", legacy: "Only Nigerian leader to rule both as military head of state and as an elected president. Voluntarily handed power to civilians in 1979 — rare for African military rulers." },
-  { init: "SS", name: "Shehu Shagari", party: "NPN", years: "1979–1983", type: "civilian", legacy: "First executive president. Oil boom era marred by corruption. Overthrown despite winning controversial re-election in 1983." },
-  { init: "UY", name: "Umaru Yar'Adua", party: "PDP", years: "2007–2010", type: "civilian", legacy: "First president to publicly declare assets. Launched Niger Delta Amnesty program. Died mid-term from kidney disease after lengthy illness in Saudi Arabia." },
-  { init: "GJ", name: "Goodluck Jonathan", party: "PDP", years: "2010–2015", type: "civilian", legacy: "Rose from VP after Yar'Adua's death. First southerner to lose an election to a northerner. His early concession in 2015 is considered his greatest gift to Nigerian democracy." },
-  { init: "MB", name: "Muhammadu Buhari", party: "Mil/APC", years: "1984–85, 2015–2023", type: "both", legacy: "Returned to power 30 years after his coup. Anti-corruption focus but presided over worsening insecurity, worst recession since 1980s, and controversial fuel subsidy maintenance." },
-  { init: "BT", name: "Bola Tinubu", party: "APC", years: "2023–present", type: "civilian", legacy: "Former Lagos governor who built Nigeria's most powerful political machine. Won 2023 with 36.6% in a three-way race. His 'Renewed Hope' agenda faces severe economic headwinds." },
+  { img: "/azikiwe.webp", init: "NA", name: "Nnamdi Azikiwe", party: "NCNC", years: "1963–1966", type: "civilian", title: "President", legacy: "Nigeria's first president (ceremonial under PM Balewa). Intellectual, nationalist, Pan-Africanist. Known as 'Zik of Africa'. Removed from office by the January 1966 military coup." },
+  { img: "/ironsi.jpg", init: "AI", name: "Aguiyi-Ironsi", party: "Military", years: "Jan–Jul 1966", type: "military", title: "Head of State", legacy: "Became Nigeria's first military head of state after the January 1966 coup — not as a plotter, but as the most senior surviving officer who stepped into the vacuum. His Decree No. 34 abolishing the federal structure inflamed Northern fears and triggered his overthrow and murder after just 194 days in power." },
+  { img: "/gowon.webp", init: "YG", name: "Yakubu Gowon", party: "Military", years: "1966–1975", type: "military", title: "Head of State", legacy: "Led Nigeria through the civil war. His 'No victor, no vanquished' post-war policy prevented further bloodshed. A Middle Belt Christian chosen as a unifying compromise. Overthrown while attending an OAU summit in Uganda." },
+  { img: "/muhammed.jpg", init: "MM", name: "Murtala Muhammed", party: "Military", years: "1975–1976", type: "military", title: "Head of State", legacy: "Energetic reformer who planned moving the capital to Abuja. Known for bold anti-corruption purges. Assassinated in a failed coup just 6 months into office — remains one of Nigeria's most beloved leaders." },
+  { img: "/obasanjo.jpg", init: "OO", name: "Olusegun Obasanjo", party: "Mil/PDP", years: "1976–79, 1999–2007", type: "both", title: "Head of State / President", legacy: "The only Nigerian leader to rule both as military head of state and as an elected president. Voluntarily handed power to civilians in 1979 — rare for African military rulers. His civilian tenure saw debt relief but also democratic backsliding." },
+  { img: "/shagari.webp", init: "SS", name: "Shehu Shagari", party: "NPN", years: "1979–1983", type: "civilian", title: "President", legacy: "First executive president under the Second Republic. The oil boom era masked deep corruption. Won a controversial re-election in 1983, then was overthrown by Buhari's coup on the last day of the year." },
+  { img: "/buhari.jpg", init: "MB", name: "Muhammadu Buhari", party: "Mil/APC", years: "1984–85, 2015–2023", type: "both", title: "Head of State / President", legacy: "Overthrew Shagari in 1983; returned to power 30 years later via the ballot. Anti-corruption was his core brand, but his tenures were marked by press repression (military era) and worsening insecurity and a deep recession (civilian era)." },
+  { img: "/babangida.webp", init: "IB", name: "Ibrahim Babangida", party: "Military", years: "1985–1993", type: "military", title: "Head of State", legacy: "Nigeria's self-declared 'President' and the most consequential military ruler. Known as 'The Maradona' for political cunning. Annulled the June 12, 1993 election — arguably the single most consequential political act in Nigerian history." },
+  { img: "/shonekan.jpg", init: "ES", name: "Ernest Shonekan", party: "ING", years: "Aug–Nov 1993", type: "civilian", title: "Interim Head of Government", legacy: "Handed power by Babangida as a transitional face. A respected Yoruba businessman with no real authority — the military retained control. Removed by Abacha in a 'palace coup' just 82 days later." },
+  { img: "/abacha.webp", init: "SA", name: "Sani Abacha", party: "Military", years: "1993–1998", type: "military", title: "Head of State", legacy: "Nigeria's most brutal and kleptocratic ruler. Executed Ken Saro-Wiwa, jailed Obasanjo, held Abiola until his death. Looted an estimated $3–5 billion. Died suddenly in 1998 — widely believed to be poisoning — which opened the door to democracy." },
+  { img: "/abubakar.webp", init: "AA", name: "Abdulsalami Abubakar", party: "Military", years: "1998–1999", type: "military", title: "Head of State", legacy: "Succeeded Abacha and surprised Nigeria by genuinely transitioning to democracy within a year. His 10-month tenure produced a new constitution, elections, and Nigeria's Fourth Republic. Widely respected for keeping his word." },
+  { img: "/yaradua.jpg", init: "UY", name: "Umaru Yar'Adua", party: "PDP", years: "2007–2010", type: "civilian", title: "President", legacy: "First president to publicly declare his assets. Launched the Niger Delta Amnesty program, transforming regional violence. Died mid-term from kidney disease after governing largely from a Saudi hospital — a constitutional crisis Nigeria was slow to resolve." },
+  { img: "/jonathan.jpg", init: "GJ", name: "Goodluck Jonathan", party: "PDP", years: "2010–2015", type: "civilian", title: "President", legacy: "Rose from Vice-President after Yar'Adua's death. The first southerner to lose a presidential election to a northerner. His graceful 2015 concession before final results were announced is considered his greatest gift to Nigerian democracy." },
+  { img: "/tinubu.png", init: "BT", name: "Bola Tinubu", party: "APC", years: "2023–present", type: "civilian", title: "President", legacy: "Former Lagos governor who built Nigeria's most powerful political machine over two decades. Won 2023 with 36.6% in a three-way race. His 'Renewed Hope' agenda faces severe economic headwinds from fuel subsidy removal and naira devaluation." },
 ];
 
 const PARTIES = [
@@ -276,6 +281,7 @@ const PARTIES = [
   { abbr: "NNPP", name: "New Nigeria Peoples Party", founded: 2020, color: "#3949ab", ideology: "People-first populist", period: "2023 Kano", desc: "Became a force in 2023 with Rabiu Kwankwaso winning Kano governorship and finishing 4th in the presidential race. Kwankwaso is an ADC/coalition key figure for the 2027 opposition alliance." },
   { abbr: "APGA", name: "All Progressives Grand Alliance", founded: 2003, color: "#8b0000", ideology: "Pan-Igbo/Progressive", period: "Southeast force", desc: "Dominant in Anambra since 2006. Known for relatively effective governance. Charles Soludo (former CBN governor) currently governs Anambra under this banner." },
   { abbr: "NPN", name: "National Party of Nigeria", founded: 1978, color: "#888", ideology: "Conservative/Northern", period: "1979–1983", desc: "The party of the Second Republic under Shehu Shagari. The oil boom masked its failures. Dissolved after the 1983 military coup." },
+  { abbr: "ADC", name: "African Democratic Congress", founded: 2005, color: "#00838f", ideology: "Centrist / Coalition vehicle", period: "2023–present", desc: "A mid-tier party that became politically significant ahead of 2027 as a potential coalition vehicle for opposition unity. Several APC and PDP defectors have used it as a platform, and it has been discussed as a possible alliance partner for Kwankwaso's NNPP in building an anti-incumbency coalition against Tinubu's APC." },
 ];
 
 const GOVERNORS = [
@@ -930,29 +936,49 @@ function ElectionsPage() {
 }
 
 function PresidentsPage() {
-  const [hov, setHov] = useState(null);
+  const [sel, setSel] = useState(null);
+  const typeColor = t => t === "military" ? "#b22222" : t === "civilian" ? "#3949ab" : "#008751";
+
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} style={{ padding: "100px 6vw 80px", maxWidth: 1200, margin: "0 auto" }}>
-      <PH eyebrow="Leaders" title="Heads of State" sub="Every president and military ruler since independence. Hover to read their legacy." />
+      <PH eyebrow="Heads of State & Presidents" title="Nigerian Leaders" sub="Every head of state and president from independence to today. Click any card to read their legacy." />
       <div style={{ display: "flex", gap: "0.6rem", marginBottom: "3rem", flexWrap: "wrap" }}>
-        <Pill label="Civilian" color="#3949ab" /><Pill label="Military" color="#b22222" /><Pill label="Both" color="#008751" />
+        <Pill label="Civilian" color="#3949ab" /><Pill label="Military" color="#b22222" /><Pill label="Civilian + Military" color="#008751" />
       </div>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(210px,1fr))", gap: "1.25rem" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(240px,1fr))", gap: "1.25rem" }}>
         {PRESIDENTS.map((p, i) => {
-          const tc = p.type === "military" ? "#b22222" : p.type === "civilian" ? "#3949ab" : "#008751";
+          const tc = typeColor(p.type);
+          const isOpen = sel === i;
           return (
-            <motion.div key={i} initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }}
-              onHoverStart={() => setHov(i)} onHoverEnd={() => setHov(null)} whileHover={{ y: -5, borderColor: tc }}
-              style={{ border: "1px solid var(--border)", borderRadius: 16, padding: "1.75rem 1.5rem", textAlign: "center", background: "var(--white)", cursor: "default" }}>
-              <div style={{ width: 80, height: 80, borderRadius: "50%", background: tc + "10", border: `2px solid ${tc}25`, margin: "0 auto 1rem", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.2rem", fontWeight: 800, color: tc }}>{p.init}</div>
-              <div style={{ fontWeight: 700, fontSize: "0.95rem", marginBottom: 3 }}>{p.name}</div>
-              <div style={{ fontSize: "0.68rem", color: tc, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: 4 }}>{p.type === "both" ? "Military + Civilian" : p.type}</div>
-              <div style={{ fontSize: "0.75rem", color: "var(--g)", fontWeight: 600, marginBottom: "0.6rem" }}>{p.years}</div>
+            <motion.div key={i} initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.04 }}
+              onClick={() => setSel(isOpen ? null : i)}
+              whileHover={{ y: -4, borderColor: tc }}
+              style={{ border: `1.5px solid ${isOpen ? tc : "var(--border)"}`, borderRadius: 16, padding: "1.75rem 1.5rem", background: "var(--white)", cursor: "pointer" }}>
+              {/* Avatar */}
+              <div style={{ width: 88, height: 88, borderRadius: "50%", border: `3px solid ${tc}30`, margin: "0 auto 1rem", overflow: "hidden", background: tc + "15", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <img
+                  src={p.img} alt={p.name}
+                  onError={e => { e.target.style.display = "none"; e.target.nextSibling.style.display = "flex"; }}
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }}
+                />
+                <div style={{ display: "none", width: "100%", height: "100%", alignItems: "center", justifyContent: "center", fontSize: "1.3rem", fontWeight: 800, color: tc }}>{p.init}</div>
+              </div>
+              {/* Header */}
+              <div style={{ textAlign: "center" }}>
+                <div style={{ fontWeight: 700, fontSize: "0.95rem", marginBottom: 2 }}>{p.name}</div>
+                <div style={{ fontSize: "0.65rem", color: tc, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: 4 }}>{p.title}</div>
+                <div style={{ fontSize: "0.75rem", color: "var(--g)", fontWeight: 600, marginBottom: "0.5rem" }}>{p.years}</div>
+                <Pill label={p.party} color={tc} />
+              </div>
+              {/* Expandable legacy */}
               <AnimatePresence>
-                {hov === i
-                  ? <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} style={{ fontSize: "0.78rem", color: "var(--sub)", lineHeight: 1.65 }}>{p.legacy}</motion.p>
-                  : <p style={{ fontSize: "0.78rem", color: "var(--muted)" }}>{p.party}</p>
-                }
+                {isOpen && (
+                  <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.3 }} style={{ overflow: "hidden" }}>
+                    <div style={{ marginTop: "1.25rem", paddingTop: "1.25rem", borderTop: `1px solid ${tc}25` }}>
+                      <p style={{ fontSize: "0.82rem", color: "var(--sub)", lineHeight: 1.75 }}>{p.legacy}</p>
+                    </div>
+                  </motion.div>
+                )}
               </AnimatePresence>
             </motion.div>
           );
@@ -1505,17 +1531,34 @@ function Tracker2027Page() {
   ];
 
   const EVENTS_2027 = [
-    { date: "Feb 2027", event: "Presidential Election", note: "Target date set by INEC", type: "election" },
-    { date: "H2 2026", event: "Party Primaries", note: "All major parties expected to hold primaries to select candidates", type: "political" },
-    { date: "Early 2026", event: "INEC Voter Registration", note: "Mass registration drive expected; key battleground for all parties", type: "admin" },
-    { date: "2025–2026", event: "Alliance Negotiations", note: "LP–NNPP merger talks; PDP's internal rebuild after 2023 collapse; APC managing Tinubu's base", type: "political" },
-    { date: "Mid 2025", event: "Governorship Elections (Anambra)", note: "Anambra Nov 2025 governorship — early test of LP strength in SE", type: "election" },
+    { date: "Apr 1, 2026", event: "Pre-election Activities Begin", note: "INEC's revised timetable officially kicks off preparatory activities from this date under the Electoral Act 2026.", type: "admin" },
+    { date: "Apr 23 – May 30, 2026", event: "Party Primaries", note: "All political parties must conduct their presidential, governorship, and NASS primaries within this window. Dispute resolution also falls here.", type: "political" },
+    { date: "Aug 15, 2026", event: "Osun State Governorship Election", note: "Rescheduled from Aug 8. An early test of party strength ahead of the general election.", type: "election" },
+    { date: "Aug 19, 2026", event: "Presidential & NASS Campaigns Begin", note: "Campaigns for the presidential and National Assembly elections officially open. Must end 24 hours before election day.", type: "political" },
+    { date: "Sep 9, 2026", event: "Governorship & State Assembly Campaigns Begin", note: "Campaigns for governorship and state Houses of Assembly elections commence.", type: "political" },
+    { date: "Jan 15, 2027", event: "Campaign Blackout (Presidential)", note: "All presidential and NASS campaigns must cease 24 hours before election day. INEC will enforce compliance.", type: "admin" },
+    { date: "Jan 16, 2027", event: "Presidential & National Assembly Elections", note: "🗳️ The main event. All 36 states + FCT vote for President, Senate, and House of Representatives.", type: "election" },
+    { date: "Feb 5, 2027", event: "Campaign Blackout (Governorship)", note: "Campaigns for governorship and state assembly elections cease 24 hours before polling.", type: "admin" },
+    { date: "Feb 6, 2027", event: "Governorship & State Assembly Elections", note: "All 36 states vote for governors and state houses of assembly. A second wave of political realignment expected.", type: "election" },
   ];
 
-  const now = new Date();
-  const election = new Date("2027-02-27");
-  const daysLeft = Math.ceil((election - now) / (1000 * 60 * 60 * 24));
-  const months = Math.floor(daysLeft / 30);
+  const ELECTION_DATE = new Date("2027-01-16T08:00:00");
+  const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+  useEffect(() => {
+    const tick = () => {
+      const diff = ELECTION_DATE - new Date();
+      if (diff <= 0) { setCountdown({ days: 0, hours: 0, minutes: 0, seconds: 0 }); return; }
+      setCountdown({
+        days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes: Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds: Math.floor((diff % (1000 * 60)) / 1000),
+      });
+    };
+    tick();
+    const id = setInterval(tick, 1000);
+    return () => clearInterval(id);
+  }, []);
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
@@ -1528,13 +1571,29 @@ function Tracker2027Page() {
         </motion.h1>
         <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }}
           style={{ color: "rgba(255,255,255,0.6)", maxWidth: 560, margin: "0 auto 3rem", lineHeight: 1.8, fontSize: "1rem" }}>
-          Nigeria's next presidential election is scheduled for February 2027. The political landscape is already shifting — alliances forming, candidates positioning, and the economy setting the stage.
+          Nigeria's next presidential election is scheduled for <strong style={{ color: "#a8d8bc" }}>January 16, 2027</strong>, per INEC's revised timetable under the Electoral Act 2026. The political landscape is already shifting — alliances forming, candidates positioning, and the economy setting the stage.
         </motion.p>
-        <div style={{ display: "inline-block", background: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: 16, padding: "1.5rem 3rem" }}>
-          <div style={{ fontSize: "clamp(3rem,10vw,6rem)", fontWeight: 900, letterSpacing: "-3px", lineHeight: 1, color: "#a8d8bc" }}>{daysLeft.toLocaleString()}</div>
-          <div style={{ fontSize: "0.82rem", color: "rgba(255,255,255,0.45)", marginTop: 4 }}>days until ~Feb 27, 2027 · {months} months away</div>
+        <div style={{ marginBottom: "1rem" }}>
+          <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
+            {[
+              { val: countdown.days, label: "DAYS" },
+              { val: countdown.hours, label: "HOURS" },
+              { val: countdown.minutes, label: "MINUTES" },
+              { val: countdown.seconds, label: "SECONDS" },
+            ].map(({ val, label }) => (
+              <div key={label} style={{ background: "rgba(168,216,188,0.1)", border: "1px solid rgba(168,216,188,0.25)", borderRadius: 16, padding: "1.5rem 1.75rem", minWidth: 110, textAlign: "center" }}>
+                <div style={{ fontSize: "clamp(2.2rem,6vw,3.5rem)", fontWeight: 900, letterSpacing: "-2px", lineHeight: 1, color: "#a8d8bc" }}>
+                  {String(val).padStart(2, "0")}
+                </div>
+                <div style={{ fontSize: "0.62rem", color: "rgba(255,255,255,0.45)", fontWeight: 700, letterSpacing: "0.15em", marginTop: 8 }}>{label}</div>
+              </div>
+            ))}
+          </div>
+          <div style={{ fontSize: "0.78rem", color: "rgba(255,255,255,0.35)", marginTop: "1.25rem" }}>
+            until Presidential Election · Jan 16, 2027 · per INEC revised timetable
+          </div>
         </div>
-        <p style={{ fontSize: "0.72rem", color: "rgba(255,255,255,0.3)", marginTop: "1.5rem" }}>Note: Final date subject to INEC confirmation. All polling reflects pre-campaign period estimates.</p>
+        <p style={{ fontSize: "0.72rem", color: "rgba(255,255,255,0.3)", marginTop: "0.5rem" }}>Dates per INEC Electoral Act 2026 revised timetable (Feb 26, 2026). All candidate info reflects pre-campaign period.</p>
       </div>
 
       {/* Tabs */}
