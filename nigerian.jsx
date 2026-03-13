@@ -1754,7 +1754,7 @@ function QuizPage() {
   const shareText = () => {
     const medal = pct >= 80 ? "🏆" : pct >= 60 ? "📚" : pct >= 40 ? "🤔" : "📖";
     const grade = pct >= 80 ? "Expert" : pct >= 60 ? "Solid Knowledge" : pct >= 40 ? "Good Start" : "Keep Learning";
-    return `${medal} I scored ${score}/${QUIZ_QUESTIONS.length} (${pct}%) on the Nigerian Democracy Quiz!\n\nGrade: ${grade}\n\nTest your own knowledge of Nigeria's democratic history 🇳🇬\n#NaijaDemocracy #Nigeria`;
+    return `${medal} I scored ${score}/${QUIZ_QUESTIONS.length} (${pct}%) on the Nigerian Democracy Quiz!\n\nGrade: ${grade}\n\nThink you know Nigeria's democratic history? Test yourself 🇳🇬\n👉 naijademocracy.vercel.app\n\n#NaijaDemocracy #Nigeria`;
   };
 
   const shareLinks = [
